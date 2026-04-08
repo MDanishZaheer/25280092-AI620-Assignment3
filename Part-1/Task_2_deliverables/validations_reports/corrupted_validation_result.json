@@ -1,0 +1,2004 @@
+{
+  "success": false,
+  "results": [
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "currency",
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset"
+        },
+        "meta": {},
+        "id": "3213bb82-5159-4e00-8fe0-ae8caacb56ae",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.nonnull.condition', metric_domain_kwargs_id='aa7f866d2f1d40387ae81bbe5aff53f6', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\map_metric_provider\\column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"currency\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"currency\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"currency\" in BatchData does not exist.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "column": "currency",
+          "value_set": [
+            "EUR",
+            "GBP",
+            "PKR",
+            "USD"
+          ],
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset"
+        },
+        "meta": {},
+        "id": "1b05ba1b-0e3a-41e9-a9c9-4d7ec1c3cf40",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "MetricConfigurationID(metric_name='column_values.nonnull.condition', metric_domain_kwargs_id='182aa50b27d5832be6ca10c6fc39bd2e', metric_value_kwargs_id=())": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\map_metric_provider\\column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"currency\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"currency\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"currency\" in BatchData does not exist.",
+          "raised_exception": true
+        },
+        "MetricConfigurationID(metric_name='column_values.in_set.condition', metric_domain_kwargs_id='182aa50b27d5832be6ca10c6fc39bd2e', metric_value_kwargs_id=\"value_set=['EUR', 'GBP', 'PKR', 'USD']\")": {
+          "exception_traceback": "Traceback (most recent call last):\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 577, in _process_direct_and_bundled_metric_computation_configurations\n    metric_computation_configuration.metric_fn(  # type: ignore[misc] # F not callable\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        **metric_computation_configuration.metric_provider_kwargs\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\metric_provider.py\", line 99, in inner_func\n    return metric_fn(*args, **kwargs)\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\map_metric_provider\\column_condition_partial.py\", line 96, in inner_func\n    metric_domain_kwargs = get_dbms_compatible_metric_domain_kwargs(\n        metric_domain_kwargs=metric_domain_kwargs,\n        batch_columns_list=metrics[\"table.columns\"],\n    )\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\util.py\", line 757, in get_dbms_compatible_metric_domain_kwargs\n    column_name: str | sqlalchemy.quoted_name = get_dbms_compatible_column_names(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=metric_domain_kwargs[\"column\"],\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\util.py\", line 827, in get_dbms_compatible_column_names\n    _verify_column_names_exist_and_get_normalized_typed_column_names_map(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        column_names=column_names,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        batch_columns_list=batch_columns_list,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        error_message_template=error_message_template,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\metrics\\util.py\", line 912, in _verify_column_names_exist_and_get_normalized_typed_column_names_map\n    raise gx_exceptions.InvalidMetricAccessorDomainKwargsKeyError(\n        message=error_message_template.format(column_name=column_name)\n    )\ngreat_expectations.exceptions.exceptions.InvalidMetricAccessorDomainKwargsKeyError: Error: The column \"currency\" in BatchData does not exist.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\validator\\validation_graph.py\", line 290, in _resolve\n    self._execution_engine.resolve_metrics(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metrics_to_resolve=computable_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metrics=metrics,\n        ^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 294, in resolve_metrics\n    return self._process_direct_and_bundled_metric_computation_configurations(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        metric_fn_direct_configurations=metric_fn_direct_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        metric_fn_bundle_configurations=metric_fn_bundle_configurations,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\execution_engine\\execution_engine.py\", line 582, in _process_direct_and_bundled_metric_computation_configurations\n    raise gx_exceptions.MetricResolutionError(\n    ...<2 lines>...\n    ) from e\ngreat_expectations.exceptions.exceptions.MetricResolutionError: Error: The column \"currency\" in BatchData does not exist.\n",
+          "exception_message": "Error: The column \"currency\" in BatchData does not exist.",
+          "raised_exception": true
+        }
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "sale_id"
+        },
+        "meta": {},
+        "id": "98ef46eb-0ae7-4c62-a9a1-232600fb99e2",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "sale_id",
+          "type_": "int64"
+        },
+        "meta": {},
+        "id": "9881b7d1-97f2-4586-9486-e70c0c9e4539",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "int64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "sale_id"
+        },
+        "meta": {},
+        "id": "6274ab2c-3f1a-4801-89aa-6863a7494d0d",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 1040203,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "sale_id"
+        },
+        "meta": {},
+        "id": "a684a805-9efa-490d-a2d7-1bbf748d374a",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 1040203,
+        "unexpected_count": 80014,
+        "unexpected_percent": 7.69215239717632,
+        "partial_unexpected_list": [
+          117,
+          126,
+          211,
+          273,
+          202,
+          283,
+          381,
+          430,
+          433,
+          436,
+          449,
+          463,
+          474,
+          546,
+          550,
+          639,
+          703,
+          707,
+          717,
+          722
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 7.69215239717632,
+        "unexpected_percent_nonmissing": 7.69215239717632,
+        "partial_unexpected_counts": [
+          {
+            "value": 117,
+            "count": 1
+          },
+          {
+            "value": 126,
+            "count": 1
+          },
+          {
+            "value": 202,
+            "count": 1
+          },
+          {
+            "value": 211,
+            "count": 1
+          },
+          {
+            "value": 273,
+            "count": 1
+          },
+          {
+            "value": 283,
+            "count": 1
+          },
+          {
+            "value": 381,
+            "count": 1
+          },
+          {
+            "value": 430,
+            "count": 1
+          },
+          {
+            "value": 433,
+            "count": 1
+          },
+          {
+            "value": 436,
+            "count": 1
+          },
+          {
+            "value": 449,
+            "count": 1
+          },
+          {
+            "value": 463,
+            "count": 1
+          },
+          {
+            "value": 474,
+            "count": 1
+          },
+          {
+            "value": 546,
+            "count": 1
+          },
+          {
+            "value": 550,
+            "count": 1
+          },
+          {
+            "value": 639,
+            "count": 1
+          },
+          {
+            "value": 703,
+            "count": 1
+          },
+          {
+            "value": 707,
+            "count": 1
+          },
+          {
+            "value": 717,
+            "count": 1
+          },
+          {
+            "value": 722,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          96,
+          105,
+          176,
+          231,
+          240,
+          241,
+          329,
+          369,
+          372,
+          375,
+          385,
+          396,
+          405,
+          467,
+          470,
+          547,
+          598,
+          601,
+          611,
+          615
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "sale_id",
+          "min_value": 1.0,
+          "max_value": 1000000.0
+        },
+        "meta": {},
+        "id": "d6a556db-fb44-485f-bd8e-27aabcc72828",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 1040203,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "customer_id"
+        },
+        "meta": {},
+        "id": "2d78706b-7b38-49af-b233-c7c29a93eca1",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "customer_id",
+          "type_": "int64"
+        },
+        "meta": {},
+        "id": "b1e5af17-afc8-4484-b9d4-a4a0ac1b8fec",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "customer_id"
+        },
+        "meta": {},
+        "id": "e204fb18-13cf-4ce7-b633-9b20172cb6aa",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 1040203,
+        "unexpected_count": 12889,
+        "unexpected_percent": 1.2390850632040091,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          1619,
+          3080,
+          5357,
+          5679,
+          5760,
+          7910,
+          10411,
+          10901,
+          14921,
+          16584,
+          21728,
+          22232,
+          22309,
+          24572,
+          24811,
+          25614,
+          26224,
+          34329,
+          34567,
+          38176
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "customer_id",
+          "min_value": 1.0,
+          "max_value": 200000.0
+        },
+        "meta": {},
+        "id": "7e9a7feb-e6c6-48c3-ac66-19512085b481",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 1040203,
+        "unexpected_count": 10193,
+        "unexpected_percent": 0.9921990744796626,
+        "partial_unexpected_list": [
+          637977.0,
+          348564.0,
+          722997.0,
+          716228.0,
+          318076.0,
+          408298.0,
+          660391.0,
+          528055.0,
+          606641.0,
+          302360.0,
+          468234.0,
+          687390.0,
+          386276.0,
+          342047.0,
+          628743.0,
+          352283.0,
+          345628.0,
+          548999.0,
+          652027.0,
+          318644.0
+        ],
+        "missing_count": 12889,
+        "missing_percent": 1.2390850632040091,
+        "unexpected_percent_total": 0.9799048839505365,
+        "unexpected_percent_nonmissing": 0.9921990744796626,
+        "partial_unexpected_counts": [
+          {
+            "value": 302360.0,
+            "count": 1
+          },
+          {
+            "value": 318076.0,
+            "count": 1
+          },
+          {
+            "value": 318644.0,
+            "count": 1
+          },
+          {
+            "value": 342047.0,
+            "count": 1
+          },
+          {
+            "value": 345628.0,
+            "count": 1
+          },
+          {
+            "value": 348564.0,
+            "count": 1
+          },
+          {
+            "value": 352283.0,
+            "count": 1
+          },
+          {
+            "value": 386276.0,
+            "count": 1
+          },
+          {
+            "value": 408298.0,
+            "count": 1
+          },
+          {
+            "value": 468234.0,
+            "count": 1
+          },
+          {
+            "value": 528055.0,
+            "count": 1
+          },
+          {
+            "value": 548999.0,
+            "count": 1
+          },
+          {
+            "value": 606641.0,
+            "count": 1
+          },
+          {
+            "value": 628743.0,
+            "count": 1
+          },
+          {
+            "value": 637977.0,
+            "count": 1
+          },
+          {
+            "value": 652027.0,
+            "count": 1
+          },
+          {
+            "value": 660391.0,
+            "count": 1
+          },
+          {
+            "value": 687390.0,
+            "count": 1
+          },
+          {
+            "value": 716228.0,
+            "count": 1
+          },
+          {
+            "value": 722997.0,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          898143,
+          910770,
+          921373,
+          921969,
+          978519,
+          979081,
+          979084,
+          979085,
+          979088,
+          979091,
+          979094,
+          979095,
+          979096,
+          979097,
+          979100,
+          979105,
+          979106,
+          979109,
+          979110,
+          979113
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "product_id"
+        },
+        "meta": {},
+        "id": "46ddc9ac-056a-45a5-ab90-804a88136b44",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "product_id",
+          "type_": "int64"
+        },
+        "meta": {},
+        "id": "e8580762-3a74-4119-a12a-500e1e664bec",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "product_id"
+        },
+        "meta": {},
+        "id": "57a91ae4-eb1d-42dc-8f32-c5df0a56d3fa",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 1040203,
+        "unexpected_count": 10246,
+        "unexpected_percent": 0.9850000432607866,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          1619,
+          6569,
+          7910,
+          9912,
+          10411,
+          10901,
+          12117,
+          16584,
+          22232,
+          22309,
+          24572,
+          24811,
+          34329,
+          38176,
+          38989,
+          41860,
+          45467,
+          46438,
+          50533,
+          50613
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "product_id",
+          "min_value": 1.0,
+          "max_value": 20000.0
+        },
+        "meta": {},
+        "id": "3a426191-30ee-4253-a226-9c55b36daebe",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 1040203,
+        "unexpected_count": 10373,
+        "unexpected_percent": 1.0071294238497335,
+        "partial_unexpected_list": [
+          248235.0,
+          63556.0,
+          213659.0,
+          168240.0,
+          230637.0,
+          218590.0,
+          114170.0,
+          124427.0,
+          241058.0,
+          70230.0,
+          70291.0,
+          176812.0,
+          196859.0,
+          178244.0,
+          77512.0,
+          102893.0,
+          171143.0,
+          178073.0,
+          199965.0,
+          164557.0
+        ],
+        "missing_count": 10246,
+        "missing_percent": 0.9850000432607866,
+        "unexpected_percent_total": 0.9972091985891215,
+        "unexpected_percent_nonmissing": 1.0071294238497335,
+        "partial_unexpected_counts": [
+          {
+            "value": 63556.0,
+            "count": 1
+          },
+          {
+            "value": 70230.0,
+            "count": 1
+          },
+          {
+            "value": 70291.0,
+            "count": 1
+          },
+          {
+            "value": 77512.0,
+            "count": 1
+          },
+          {
+            "value": 102893.0,
+            "count": 1
+          },
+          {
+            "value": 114170.0,
+            "count": 1
+          },
+          {
+            "value": 124427.0,
+            "count": 1
+          },
+          {
+            "value": 164557.0,
+            "count": 1
+          },
+          {
+            "value": 168240.0,
+            "count": 1
+          },
+          {
+            "value": 171143.0,
+            "count": 1
+          },
+          {
+            "value": 176812.0,
+            "count": 1
+          },
+          {
+            "value": 178073.0,
+            "count": 1
+          },
+          {
+            "value": 178244.0,
+            "count": 1
+          },
+          {
+            "value": 196859.0,
+            "count": 1
+          },
+          {
+            "value": 199965.0,
+            "count": 1
+          },
+          {
+            "value": 213659.0,
+            "count": 1
+          },
+          {
+            "value": 218590.0,
+            "count": 1
+          },
+          {
+            "value": 230637.0,
+            "count": 1
+          },
+          {
+            "value": 241058.0,
+            "count": 1
+          },
+          {
+            "value": 248235.0,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          887866,
+          898143,
+          910770,
+          921373,
+          927934,
+          979082,
+          979083,
+          979085,
+          979086,
+          979088,
+          979090,
+          979091,
+          979092,
+          979093,
+          979095,
+          979097,
+          979100,
+          979104,
+          979105,
+          979108
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "sale_ts"
+        },
+        "meta": {},
+        "id": "7bd74361-8bc4-4f84-95f8-a9ecb0246c56",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "sale_ts"
+        },
+        "meta": {},
+        "id": "7555bc90-9cd8-4b1d-9bb7-caa26803eb8d",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 1040203,
+        "unexpected_count": 5257,
+        "unexpected_percent": 0.5053821225280065,
+        "partial_unexpected_list": [
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT",
+          "NaT"
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": "NaT",
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          1533,
+          6569,
+          7835,
+          10901,
+          14349,
+          14921,
+          18984,
+          21728,
+          22232,
+          24811,
+          25051,
+          26224,
+          34329,
+          34567,
+          36089,
+          38989,
+          44157,
+          44401,
+          45785,
+          49427
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "sale_ts",
+          "min_value": "2025-03-26T19:23:42.204402+05:00",
+          "max_value": "2026-03-26T19:22:42.204402+05:00"
+        },
+        "meta": {},
+        "id": "683e60c2-79a7-4801-bf21-f682fa692bd8",
+        "severity": "warning"
+      },
+      "result": {
+        "element_count": 1040203,
+        "unexpected_count": 20935,
+        "unexpected_percent": 2.0228108519671557,
+        "partial_unexpected_list": [
+          "2015-08-02T16:28:59.166299+00:00",
+          "2013-11-11T16:28:59.166299+00:00",
+          "2026-04-13T16:28:59.166299+00:00",
+          "2026-04-01T16:28:59.166299+00:00",
+          "2026-04-23T16:28:59.166299+00:00",
+          "2026-04-08T16:28:59.166299+00:00",
+          "2015-02-19T16:28:59.166299+00:00",
+          "2011-01-17T16:28:59.166299+00:00",
+          "2012-07-18T16:28:59.166299+00:00",
+          "2026-04-10T16:28:59.166299+00:00",
+          "2012-09-03T16:28:59.166299+00:00",
+          "2009-09-26T15:28:59.166299+00:00",
+          "2026-04-09T16:28:59.166299+00:00",
+          "2006-12-15T16:28:59.166299+00:00",
+          "2009-01-07T16:28:59.166299+00:00",
+          "2026-03-31T16:28:59.166299+00:00",
+          "2011-03-05T16:28:59.166299+00:00",
+          "2026-04-06T16:28:59.166299+00:00",
+          "2026-04-10T16:28:59.166299+00:00",
+          "2026-03-29T16:28:59.166299+00:00"
+        ],
+        "missing_count": 5257,
+        "missing_percent": 0.5053821225280065,
+        "unexpected_percent_total": 2.0125879275487573,
+        "unexpected_percent_nonmissing": 2.0228108519671557,
+        "partial_unexpected_counts": [
+          {
+            "value": "2026-04-10T16:28:59.166299+00:00",
+            "count": 2
+          },
+          {
+            "value": "2006-12-15T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2009-01-07T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2009-09-26T15:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2011-01-17T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2011-03-05T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2012-07-18T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2012-09-03T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2013-11-11T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2015-02-19T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2015-08-02T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2026-03-29T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2026-03-31T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2026-04-01T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2026-04-06T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2026-04-08T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2026-04-09T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2026-04-13T16:28:59.166299+00:00",
+            "count": 1
+          },
+          {
+            "value": "2026-04-23T16:28:59.166299+00:00",
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          900768,
+          925578,
+          927174,
+          928184,
+          931689,
+          932823,
+          933088,
+          933288,
+          934021,
+          935178,
+          936721,
+          936856,
+          937129,
+          939067,
+          939544,
+          940215,
+          941297,
+          941366,
+          941500,
+          941702
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "quantity"
+        },
+        "meta": {},
+        "id": "7fd9580f-a3f6-41e1-bdc6-306094317300",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "quantity",
+          "type_": "int64"
+        },
+        "meta": {},
+        "id": "e4e57dbf-63ae-49a5-975e-3876da8eedbc",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "int64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "quantity"
+        },
+        "meta": {},
+        "id": "e646859f-53d9-433b-b522-81bebadaa739",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 1040203,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "quantity",
+          "min_value": 1.0,
+          "max_value": 219.0
+        },
+        "meta": {},
+        "id": "4dff5f11-0d04-4dcc-8aa6-630630bdff47",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 1040203,
+        "unexpected_count": 28081,
+        "unexpected_percent": 2.6995692187005806,
+        "partial_unexpected_list": [
+          4456,
+          -1,
+          -3,
+          -1,
+          4407,
+          0,
+          0,
+          2902,
+          2143,
+          -1,
+          2089,
+          -5,
+          -2,
+          -5,
+          0,
+          4315,
+          1202,
+          0,
+          0,
+          0
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 2.6995692187005806,
+        "unexpected_percent_nonmissing": 2.6995692187005806,
+        "partial_unexpected_counts": [
+          {
+            "value": 0,
+            "count": 6
+          },
+          {
+            "value": -1,
+            "count": 3
+          },
+          {
+            "value": -5,
+            "count": 2
+          },
+          {
+            "value": -3,
+            "count": 1
+          },
+          {
+            "value": -2,
+            "count": 1
+          },
+          {
+            "value": 1202,
+            "count": 1
+          },
+          {
+            "value": 2089,
+            "count": 1
+          },
+          {
+            "value": 2143,
+            "count": 1
+          },
+          {
+            "value": 2902,
+            "count": 1
+          },
+          {
+            "value": 4315,
+            "count": 1
+          },
+          {
+            "value": 4407,
+            "count": 1
+          },
+          {
+            "value": 4456,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          930821,
+          930823,
+          930825,
+          930826,
+          930827,
+          930828,
+          930829,
+          930830,
+          930831,
+          930832,
+          930833,
+          930834,
+          930835,
+          930836,
+          930837,
+          930838,
+          930839,
+          930840,
+          930841,
+          930842
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_quantile_values_to_be_between",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "quantity",
+          "quantile_ranges": {
+            "quantiles": [
+              0.25,
+              0.5,
+              0.75
+            ],
+            "value_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                4
+              ]
+            ]
+          }
+        },
+        "meta": {},
+        "id": "85a9448f-51e7-4869-9350-250c217942ea",
+        "severity": "warning"
+      },
+      "result": {
+        "observed_value": {
+          "quantiles": [
+            0.25,
+            0.5,
+            0.75
+          ],
+          "values": [
+            2,
+            3,
+            4
+          ]
+        },
+        "details": {
+          "success_details": [
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "amount"
+        },
+        "meta": {},
+        "id": "68d5d298-a143-4ac7-a69e-fc2809241fa8",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "amount",
+          "type_": "float64"
+        },
+        "meta": {},
+        "id": "589716fc-87cf-469d-a783-a1be4e316988",
+        "severity": "warning"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "amount"
+        },
+        "meta": {},
+        "id": "a8ddac05-f20e-4cf0-ba48-305dcf6efba8",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 1040203,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "amount",
+          "min_value": 2.04,
+          "max_value": 41533.86
+        },
+        "meta": {},
+        "id": "f6d2de5c-207e-4f69-838e-6528abd4a8c2",
+        "severity": "warning"
+      },
+      "result": {
+        "element_count": 1040203,
+        "unexpected_count": 25080,
+        "unexpected_percent": 2.411067839642839,
+        "partial_unexpected_list": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -132.5,
+          0.0,
+          -181.73,
+          0.0,
+          0.0,
+          0.0,
+          79864.36,
+          -81.44,
+          52704.59,
+          0.0,
+          73372.36,
+          -65.8,
+          -366.11,
+          0.0,
+          0.0,
+          -463.01
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 2.411067839642839,
+        "unexpected_percent_nonmissing": 2.411067839642839,
+        "partial_unexpected_counts": [
+          {
+            "value": 0.0,
+            "count": 11
+          },
+          {
+            "value": -463.01,
+            "count": 1
+          },
+          {
+            "value": -366.11,
+            "count": 1
+          },
+          {
+            "value": -181.73,
+            "count": 1
+          },
+          {
+            "value": -132.5,
+            "count": 1
+          },
+          {
+            "value": -81.44,
+            "count": 1
+          },
+          {
+            "value": -65.8,
+            "count": 1
+          },
+          {
+            "value": 52704.59,
+            "count": 1
+          },
+          {
+            "value": 73372.36,
+            "count": 1
+          },
+          {
+            "value": 79864.36,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          930821,
+          930822,
+          930823,
+          930826,
+          930827,
+          930828,
+          930831,
+          930832,
+          930833,
+          930834,
+          930835,
+          930837,
+          930838,
+          930839,
+          930840,
+          930841,
+          930842,
+          930844,
+          930845,
+          930846
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "channel"
+        },
+        "meta": {},
+        "id": "62192183-925f-4aef-b1c3-d89a0485fda8",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "channel",
+          "type_": "object"
+        },
+        "meta": {},
+        "id": "537a0cd1-8d6b-4651-8b34-e43da2d5e493",
+        "severity": "warning"
+      },
+      "result": {
+        "observed_value": "object_"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "channel"
+        },
+        "meta": {},
+        "id": "52d513ee-186b-4fcc-8cc8-0336d5429fe8",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 1040203,
+        "unexpected_count": 34731,
+        "unexpected_percent": 3.3388675095149694,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          76,
+          240,
+          803,
+          1204,
+          2357,
+          3080,
+          4053,
+          5021,
+          5357,
+          5679,
+          5760,
+          6007,
+          6569,
+          7835,
+          7910,
+          9673,
+          9912,
+          10411,
+          10901,
+          12117
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "channel",
+          "value_set": [
+            "mobile_app",
+            "online",
+            "partner",
+            "store"
+          ]
+        },
+        "meta": {},
+        "id": "16ed0e51-8bae-41d8-a186-5e1dd49f3002",
+        "severity": "warning"
+      },
+      "result": {
+        "element_count": 1040203,
+        "unexpected_count": 25156,
+        "unexpected_percent": 2.5019095509372713,
+        "partial_unexpected_list": [
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown",
+          "unknown"
+        ],
+        "missing_count": 34731,
+        "missing_percent": 3.3388675095149694,
+        "unexpected_percent_total": 2.418374105823575,
+        "unexpected_percent_nonmissing": 2.5019095509372713,
+        "partial_unexpected_counts": [
+          {
+            "value": "unknown",
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          20677,
+          23107,
+          25051,
+          25614,
+          26224,
+          38989,
+          41860,
+          44157,
+          46276,
+          49427,
+          67618,
+          77104,
+          103491,
+          104626,
+          110863,
+          120562,
+          123185,
+          141673,
+          143542,
+          151000
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "column": "currency"
+        },
+        "meta": {},
+        "id": "ed585c76-5989-48f6-b212-da63756d37d8",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "currency",
+          "type_": "object",
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset"
+        },
+        "meta": {},
+        "id": "f8524b9a-9cca-4af6-b504-fd345165abf7",
+        "severity": "warning"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "exception_traceback": "Traceback (most recent call last):\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\validator\\validator.py\", line 650, in graph_validate\n    result = expectation.metrics_validate(\n        metrics=resolved_metrics,\n        execution_engine=self._execution_engine,\n        runtime_configuration=runtime_configuration_default,\n    )\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\expectation.py\", line 1308, in metrics_validate\n    expectation_validation_result: Union[ExpectationValidationResult, dict] = self._validate(\n                                                                              ~~~~~~~~~~~~~~^\n        metrics=provided_metrics,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n        runtime_configuration=runtime_configuration,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        execution_engine=execution_engine,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"c:\\Users\\DanishZaheer\\anaconda3\\envs\\data_engg\\Lib\\site-packages\\great_expectations\\expectations\\core\\expect_column_values_to_be_of_type.py\", line 597, in _validate\n    actual_column_type = [\n                         ~\n    ...<2 lines>...\n        if type_dict[\"name\"] == column_name\n        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    ][0]\n    ~^^^\nIndexError: list index out of range\n",
+        "exception_message": "list index out of range",
+        "raised_exception": true
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_table_row_count_to_be_between",
+        "kwargs": {
+          "batch_id": "task2_synthetic_corrupted_source-task2_synthetic_corrupted_asset",
+          "min_value": 900000,
+          "max_value": 1000000
+        },
+        "meta": {},
+        "id": "ea5bea13-1e20-4637-8834-38cd7d089092",
+        "severity": "warning"
+      },
+      "result": {
+        "observed_value": 1040203
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  ],
+  "suite_name": "general_synthetic_expectation_suite_corrupted",
+  "suite_parameters": {},
+  "statistics": {
+    "evaluated_expectations": 34,
+    "successful_expectations": 16,
+    "unsuccessful_expectations": 18,
+    "success_percent": 47.05882352941176
+  },
+  "meta": {
+    "great_expectations_version": "1.15.1",
+    "batch_spec": {
+      "batch_data": "PandasDataFrame"
+    },
+    "batch_markers": {
+      "ge_load_time": "20260408T181215.765416Z",
+      "pandas_data_fingerprint": "128b7dd7007721b9beca72d1a1ab1aeb"
+    },
+    "active_batch_definition": {
+      "datasource_name": "task2_synthetic_corrupted_source",
+      "data_connector_name": "fluent",
+      "data_asset_name": "task2_synthetic_corrupted_asset",
+      "batch_identifiers": {
+        "dataframe": "<DATAFRAME>"
+      }
+    },
+    "validation_id": "8dc01788-a13a-4501-a335-b3f4fe8c9ccf",
+    "checkpoint_id": null,
+    "run_id": {
+      "run_name": null,
+      "run_time": "2026-04-08T23:12:19.127480+05:00"
+    },
+    "validation_time": "2026-04-08T18:12:19.127480+00:00",
+    "batch_parameters": {
+      "dataframe": "<DATAFRAME>"
+    }
+  },
+  "id": null
+}

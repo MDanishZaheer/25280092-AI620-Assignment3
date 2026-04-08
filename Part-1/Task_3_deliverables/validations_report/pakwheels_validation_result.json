@@ -1,0 +1,2222 @@
+{
+  "success": false,
+  "results": [
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "addref"
+        },
+        "meta": {},
+        "id": "e4d4b118-ec0a-4aa2-9e2c-1cefa58de15e",
+        "severity": "warning"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "addref",
+          "type_": "int64"
+        },
+        "meta": {},
+        "id": "28fb7833-0d24-4984-8947-8f1a539da712",
+        "severity": "warning"
+      },
+      "result": {
+        "observed_value": "int64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "addref"
+        },
+        "meta": {},
+        "id": "dffdcc0a-a65a-4f08-b118-c4a55542ab8a",
+        "severity": "warning"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "addref"
+        },
+        "meta": {},
+        "id": "7a7a16f5-b310-42bb-8f00-f7b577eb781e",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "city"
+        },
+        "meta": {},
+        "id": "5aca9672-1ae7-4479-9cae-0a61bd9d5d92",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "city",
+          "type_": "object"
+        },
+        "meta": {},
+        "id": "98d7bf6e-1380-4962-9517-3a30e0708f63",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "object_"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "city"
+        },
+        "meta": {},
+        "id": "a4207174-accb-4786-85d2-3c21a1939925",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "assembly"
+        },
+        "meta": {},
+        "id": "795ff2c4-ab33-4d1d-ab96-d94c8b2ad3b4",
+        "severity": "warning"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "assembly",
+          "type_": "object"
+        },
+        "meta": {},
+        "id": "6a2d92c0-1048-4b81-9729-798c5b8bf0f9",
+        "severity": "warning"
+      },
+      "result": {
+        "observed_value": "object_"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "assembly"
+        },
+        "meta": {},
+        "id": "3dac52b7-c690-4503-9efc-7be8ac59497a",
+        "severity": "warning"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 42928,
+        "unexpected_percent": 68.90308497319508,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          20,
+          24,
+          26,
+          28,
+          29
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "body"
+        },
+        "meta": {},
+        "id": "7696b0f5-02fa-4bc8-a67a-7173581d238e",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "body",
+          "type_": "object"
+        },
+        "meta": {},
+        "id": "142bdfeb-a787-487b-abb7-72f156acacb4",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "object_"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "body"
+        },
+        "meta": {},
+        "id": "94c985f3-c46f-448e-b3ad-54e16a3ac31c",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 7091,
+        "unexpected_percent": 11.381657089660042,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          18,
+          21,
+          25,
+          37,
+          50,
+          62,
+          85,
+          87,
+          89,
+          91,
+          99,
+          101,
+          104,
+          107,
+          137,
+          140,
+          149,
+          166,
+          169,
+          209
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "body",
+          "mostly": 0.8,
+          "value_set": [
+            "Sedan",
+            "Hatchback",
+            "SUV",
+            "Crossover",
+            "Mini Van",
+            "Compact sedan",
+            "Double Cabin",
+            "MPV",
+            "Van",
+            "Micro Van",
+            "Pick Up",
+            "Compact SUV",
+            "Station Wagon",
+            "Coupe",
+            "Truck",
+            "High Roof",
+            "Convertible",
+            "Single Cabin",
+            "Off-Road Vehicles",
+            "Compact hatchback",
+            "Mini Vehicles"
+          ]
+        },
+        "meta": {},
+        "id": "d6151dfb-e949-442c-98ca-5ae4d2c7f631",
+        "severity": "warning"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 7091,
+        "missing_percent": 11.381657089660042,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "make"
+        },
+        "meta": {},
+        "id": "b6fa6625-f919-45c0-b81c-762bec3c406e",
+        "severity": "warning"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "make",
+          "type_": "object"
+        },
+        "meta": {},
+        "id": "73714fb2-4a7b-4783-a5ab-c26f8eb59402",
+        "severity": "warning"
+      },
+      "result": {
+        "observed_value": "object_"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "make"
+        },
+        "meta": {},
+        "id": "81f4f571-c598-4c94-84ab-aef2197f44a9",
+        "severity": "warning"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "model"
+        },
+        "meta": {},
+        "id": "b1a4c7fc-e8f2-4221-8525-2f1da83fac79",
+        "severity": "warning"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "model",
+          "type_": "object"
+        },
+        "meta": {},
+        "id": "4413787d-9336-4b29-9adb-9aa9d10f48d9",
+        "severity": "warning"
+      },
+      "result": {
+        "observed_value": "object_"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "model"
+        },
+        "meta": {},
+        "id": "f6e6e4d9-461e-4379-9816-073fc4260dc6",
+        "severity": "warning"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "year"
+        },
+        "meta": {},
+        "id": "960b439e-ca07-4380-982e-5e4e20209944",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "year",
+          "type_": "float64"
+        },
+        "meta": {},
+        "id": "e6705a50-428b-4a77-9f60-f3340edbb826",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "year"
+        },
+        "meta": {},
+        "id": "a0e55a2b-846d-4157-a885-1e59ceded8c9",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 3786,
+        "unexpected_percent": 6.076851465442521,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          16,
+          26,
+          46,
+          47,
+          50,
+          78,
+          115,
+          116,
+          144,
+          147,
+          158,
+          161,
+          167,
+          169,
+          188,
+          206,
+          208,
+          217,
+          221,
+          248
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "year",
+          "min_value": 1990.0,
+          "max_value": 2026.0
+        },
+        "meta": {},
+        "id": "cc5daebe-6835-4094-9fb6-c67cd306ca68",
+        "severity": "warning"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 3786,
+        "missing_percent": 6.076851465442521,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "engine"
+        },
+        "meta": {},
+        "id": "6ebdd31a-4b60-404b-98f9-0c49018b1368",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "engine",
+          "type_": "float64"
+        },
+        "meta": {},
+        "id": "f92c5ff2-fa92-45ca-85fe-f944df5f6fa7",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "engine"
+        },
+        "meta": {},
+        "id": "2b635def-6152-4d40-ad71-949032798581",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 3,
+        "unexpected_percent": 0.004815254726975057,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          11941,
+          35809,
+          49484
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "engine",
+          "min_value": 600.0
+        },
+        "meta": {},
+        "id": "3d60cd60-65f5-4f14-8524-e29fa9ebaa30",
+        "severity": "warning"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 151,
+        "unexpected_percent": 0.24237949244771184,
+        "partial_unexpected_list": [
+          150.0,
+          77.4,
+          60.0,
+          60.0,
+          539.0,
+          60.0,
+          120.0,
+          93.0,
+          66.0,
+          400.0,
+          75.0,
+          60.0,
+          123.0,
+          82.0,
+          100.0,
+          240.0,
+          230.0,
+          95.0,
+          123.0,
+          101.7
+        ],
+        "missing_count": 3,
+        "missing_percent": 0.004815254726975057,
+        "unexpected_percent_total": 0.24236782125774456,
+        "unexpected_percent_nonmissing": 0.24237949244771184,
+        "partial_unexpected_counts": [
+          {
+            "value": 60.0,
+            "count": 4
+          },
+          {
+            "value": 123.0,
+            "count": 2
+          },
+          {
+            "value": 66.0,
+            "count": 1
+          },
+          {
+            "value": 75.0,
+            "count": 1
+          },
+          {
+            "value": 77.4,
+            "count": 1
+          },
+          {
+            "value": 82.0,
+            "count": 1
+          },
+          {
+            "value": 93.0,
+            "count": 1
+          },
+          {
+            "value": 95.0,
+            "count": 1
+          },
+          {
+            "value": 100.0,
+            "count": 1
+          },
+          {
+            "value": 101.7,
+            "count": 1
+          },
+          {
+            "value": 120.0,
+            "count": 1
+          },
+          {
+            "value": 150.0,
+            "count": 1
+          },
+          {
+            "value": 230.0,
+            "count": 1
+          },
+          {
+            "value": 240.0,
+            "count": 1
+          },
+          {
+            "value": 400.0,
+            "count": 1
+          },
+          {
+            "value": 539.0,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          227,
+          1257,
+          1765,
+          1792,
+          1942,
+          2203,
+          2711,
+          2831,
+          3019,
+          3539,
+          3833,
+          3892,
+          5300,
+          5377,
+          6440,
+          6700,
+          7115,
+          7407,
+          7469,
+          8139
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "transmission"
+        },
+        "meta": {},
+        "id": "1d2e44d6-af67-48c4-8939-8a480fc5d8ae",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "transmission",
+          "type_": "object"
+        },
+        "meta": {},
+        "id": "c29a6cd5-9166-4ee4-b448-68e8a40b6689",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "object_"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "transmission"
+        },
+        "meta": {},
+        "id": "985ff0b7-1c7a-403a-9dbc-58839e0d9aec",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "transmission",
+          "value_set": [
+            "Automatic",
+            "Manual"
+          ]
+        },
+        "meta": {},
+        "id": "247b8d28-69c9-4876-9c38-9e7c9ec9b266",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "fuel"
+        },
+        "meta": {},
+        "id": "8531a374-664d-4e26-800a-dee9ac70cd94",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "fuel",
+          "type_": "object"
+        },
+        "meta": {},
+        "id": "31fb0874-0468-4ff6-8a68-80b997dc48a4",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "object_"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "fuel"
+        },
+        "meta": {},
+        "id": "466be956-1664-42d3-8388-b30039c29754",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 709,
+        "unexpected_percent": 1.1380052004751051,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          276,
+          368,
+          682,
+          770,
+          817,
+          968,
+          1085,
+          1154,
+          1251,
+          1257,
+          1299,
+          1347,
+          1363,
+          1545,
+          1584,
+          1765,
+          1778,
+          1792,
+          1819,
+          1845
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "fuel",
+          "value_set": [
+            "Petrol",
+            "Diesel",
+            "Hybrid"
+          ]
+        },
+        "meta": {},
+        "id": "e5d33d96-3af5-480b-89a5-ebc600515f6e",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 709,
+        "missing_percent": 1.1380052004751051,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "color"
+        },
+        "meta": {},
+        "id": "77cb3823-1932-4de0-90f6-bb8c6af89e6e",
+        "severity": "warning"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "color",
+          "type_": "object"
+        },
+        "meta": {},
+        "id": "02e5e35d-941d-4528-a62d-52c2280b4185",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "object_"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "color"
+        },
+        "meta": {},
+        "id": "08d32567-fada-4a39-a23d-178705ac01e5",
+        "severity": "warning"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 1192,
+        "unexpected_percent": 1.9132612115180894,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 20
+          }
+        ],
+        "partial_unexpected_index_list": [
+          0,
+          49,
+          115,
+          170,
+          184,
+          312,
+          359,
+          386,
+          411,
+          445,
+          456,
+          483,
+          513,
+          545,
+          559,
+          606,
+          668,
+          697,
+          775,
+          802
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "registered"
+        },
+        "meta": {},
+        "id": "22215320-92e7-422d-9cc0-9ed8ff23e2cf",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "registered",
+          "type_": "object"
+        },
+        "meta": {},
+        "id": "aa7369f5-8f44-4b28-b3ef-eccc17ce583e",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "object_"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "registered"
+        },
+        "meta": {},
+        "id": "b678cf78-48b7-40a0-9f06-fac340c10e5f",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "mileage"
+        },
+        "meta": {},
+        "id": "846d1129-feee-48ad-9f40-c771f633cbcf",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "mileage",
+          "type_": "int64"
+        },
+        "meta": {},
+        "id": "09ea54f8-8116-4092-a678-9aeed7b0ed68",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "int64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "mileage"
+        },
+        "meta": {},
+        "id": "31667186-fcff-4d3b-b523-561d6f6196c2",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "mileage",
+          "min_value": 100.0,
+          "max_value": 500000.0
+        },
+        "meta": {},
+        "id": "5cd31b18-44f2-47e4-8ed1-7c69dd4b95e9",
+        "severity": "warning"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 2453,
+        "unexpected_percent": 3.937273281756605,
+        "partial_unexpected_list": [
+          24,
+          18,
+          650035,
+          2,
+          999999,
+          1,
+          1,
+          1,
+          20,
+          10,
+          896554,
+          14,
+          1,
+          5,
+          10,
+          25,
+          70,
+          49,
+          1,
+          37
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 3.937273281756605,
+        "unexpected_percent_nonmissing": 3.937273281756605,
+        "partial_unexpected_counts": [
+          {
+            "value": 1,
+            "count": 5
+          },
+          {
+            "value": 10,
+            "count": 2
+          },
+          {
+            "value": 2,
+            "count": 1
+          },
+          {
+            "value": 5,
+            "count": 1
+          },
+          {
+            "value": 14,
+            "count": 1
+          },
+          {
+            "value": 18,
+            "count": 1
+          },
+          {
+            "value": 20,
+            "count": 1
+          },
+          {
+            "value": 24,
+            "count": 1
+          },
+          {
+            "value": 25,
+            "count": 1
+          },
+          {
+            "value": 37,
+            "count": 1
+          },
+          {
+            "value": 49,
+            "count": 1
+          },
+          {
+            "value": 70,
+            "count": 1
+          },
+          {
+            "value": 650035,
+            "count": 1
+          },
+          {
+            "value": 896554,
+            "count": 1
+          },
+          {
+            "value": 999999,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          16,
+          20,
+          31,
+          46,
+          50,
+          62,
+          65,
+          84,
+          115,
+          116,
+          117,
+          143,
+          144,
+          147,
+          158,
+          161,
+          167,
+          188,
+          199,
+          210
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_quantile_values_to_be_between",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "mileage",
+          "quantile_ranges": {
+            "quantiles": [
+              0.25,
+              0.5,
+              0.75
+            ],
+            "value_ranges": [
+              [
+                30000,
+                45000
+              ],
+              [
+                50000,
+                85000
+              ],
+              [
+                90000,
+                130000
+              ]
+            ]
+          }
+        },
+        "meta": {},
+        "id": "ba1f0d26-910f-48e0-8c44-48aa7f6f647b",
+        "severity": "warning"
+      },
+      "result": {
+        "observed_value": {
+          "quantiles": [
+            0.25,
+            0.5,
+            0.75
+          ],
+          "values": [
+            34000,
+            80000,
+            123456
+          ]
+        },
+        "details": {
+          "success_details": [
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_to_exist",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "price"
+        },
+        "meta": {},
+        "id": "8bc7b357-064b-4f80-9682-d218f77b9f12",
+        "severity": "critical"
+      },
+      "result": {},
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "price",
+          "type_": "float64"
+        },
+        "meta": {},
+        "id": "745f0586-b1e5-4b81-80d8-d0b897d10550",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": "float64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "price"
+        },
+        "meta": {},
+        "id": "cf2ee7aa-3850-4877-89e9-b929c5a31739",
+        "severity": "critical"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 472,
+        "unexpected_percent": 0.7576000770440756,
+        "partial_unexpected_list": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "partial_unexpected_counts": [
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          },
+          {
+            "value": null,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          19,
+          89,
+          184,
+          338,
+          346,
+          472,
+          571,
+          880,
+          957,
+          1029,
+          1197,
+          1321,
+          1409,
+          1428,
+          1448,
+          1503,
+          1592,
+          2295,
+          2989,
+          3093
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "price",
+          "min_value": 500000.0,
+          "max_value": 30000000.0
+        },
+        "meta": {},
+        "id": "faf9250e-8a6c-4f0c-9818-711dc78335ba",
+        "severity": "warning"
+      },
+      "result": {
+        "element_count": 62302,
+        "unexpected_count": 2335,
+        "unexpected_percent": 3.776483907488274,
+        "partial_unexpected_list": [
+          424000.0,
+          250000.0,
+          350000.0,
+          390000.0,
+          360000.0,
+          350000.0,
+          350000.0,
+          50000000.0,
+          300000.0,
+          45500000.0,
+          250000.0,
+          450000.0,
+          31500000.0,
+          410000.0,
+          300000.0,
+          435000.0,
+          295000.0,
+          30500000.0,
+          450000.0,
+          165000.0
+        ],
+        "missing_count": 472,
+        "missing_percent": 0.7576000770440756,
+        "unexpected_percent_total": 3.747873262495586,
+        "unexpected_percent_nonmissing": 3.776483907488274,
+        "partial_unexpected_counts": [
+          {
+            "value": 350000.0,
+            "count": 3
+          },
+          {
+            "value": 250000.0,
+            "count": 2
+          },
+          {
+            "value": 300000.0,
+            "count": 2
+          },
+          {
+            "value": 450000.0,
+            "count": 2
+          },
+          {
+            "value": 165000.0,
+            "count": 1
+          },
+          {
+            "value": 295000.0,
+            "count": 1
+          },
+          {
+            "value": 360000.0,
+            "count": 1
+          },
+          {
+            "value": 390000.0,
+            "count": 1
+          },
+          {
+            "value": 410000.0,
+            "count": 1
+          },
+          {
+            "value": 424000.0,
+            "count": 1
+          },
+          {
+            "value": 435000.0,
+            "count": 1
+          },
+          {
+            "value": 30500000.0,
+            "count": 1
+          },
+          {
+            "value": 31500000.0,
+            "count": 1
+          },
+          {
+            "value": 45500000.0,
+            "count": 1
+          },
+          {
+            "value": 50000000.0,
+            "count": 1
+          }
+        ],
+        "partial_unexpected_index_list": [
+          36,
+          50,
+          98,
+          117,
+          169,
+          196,
+          215,
+          253,
+          294,
+          297,
+          298,
+          305,
+          312,
+          371,
+          462,
+          488,
+          529,
+          536,
+          545,
+          593
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_column_quantile_values_to_be_between",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "column": "price",
+          "quantile_ranges": {
+            "quantiles": [
+              0.25,
+              0.5,
+              0.75
+            ],
+            "value_ranges": [
+              [
+                1300000,
+                1600000
+              ],
+              [
+                1700000,
+                2900000
+              ],
+              [
+                3000000,
+                4700000
+              ]
+            ]
+          }
+        },
+        "meta": {},
+        "id": "09eba56a-699b-486f-8907-efc9c7b79eb3",
+        "severity": "warning"
+      },
+      "result": {
+        "observed_value": {
+          "quantiles": [
+            0.25,
+            0.5,
+            0.75
+          ],
+          "values": [
+            1450000.0,
+            2700000.0,
+            4500000.0
+          ]
+        },
+        "details": {
+          "success_details": [
+            true,
+            true,
+            true
+          ]
+        }
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "type": "expect_table_row_count_to_be_between",
+        "kwargs": {
+          "batch_id": "task3_pakwheels_source-task3_pakwheels_asset",
+          "min_value": 50000
+        },
+        "meta": {},
+        "id": "2a7ba5cf-059b-4fdb-8d82-ecc4464788d1",
+        "severity": "critical"
+      },
+      "result": {
+        "observed_value": 62302
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  ],
+  "suite_name": "pakwheels_expectation_suite",
+  "suite_parameters": {},
+  "statistics": {
+    "evaluated_expectations": 53,
+    "successful_expectations": 43,
+    "unsuccessful_expectations": 10,
+    "success_percent": 81.13207547169812
+  },
+  "meta": {
+    "great_expectations_version": "1.15.1",
+    "batch_spec": {
+      "batch_data": "PandasDataFrame"
+    },
+    "batch_markers": {
+      "ge_load_time": "20260408T181221.908986Z",
+      "pandas_data_fingerprint": "89f0b819f9ab17778e628d52e204cfae"
+    },
+    "active_batch_definition": {
+      "datasource_name": "task3_pakwheels_source",
+      "data_connector_name": "fluent",
+      "data_asset_name": "task3_pakwheels_asset",
+      "batch_identifiers": {
+        "dataframe": "<DATAFRAME>"
+      }
+    },
+    "validation_id": "4c53d627-af58-4e1b-a1c4-126c6313de5d",
+    "checkpoint_id": null,
+    "run_id": {
+      "run_name": null,
+      "run_time": "2026-04-08T23:12:22.354683+05:00"
+    },
+    "validation_time": "2026-04-08T18:12:22.354683+00:00",
+    "batch_parameters": {
+      "dataframe": "<DATAFRAME>"
+    }
+  },
+  "id": null
+}
